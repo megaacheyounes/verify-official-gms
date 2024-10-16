@@ -200,6 +200,24 @@ public boolean isOfficialGooglePlayServicesInstalled(PackageManager packageManag
 
 ---
 
+### HMS SDK support
+
+If you've integrated Huawei Mobile Services (HMS) into your app, add the following metadata to your `AndroidManifest.xml` file:
+
+```xml
+<manifest>
+<!--  ...  -->
+    <application>
+        <!--  ...  -->
+        
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:hwid"
+            android:value="hwid:6.3.0.300" />
+
+    </application>
+</manifest>
+```
+
 ## Disclaimer 
 
 This code is provided **without warranty of any kind**. It may not be updated or maintained in the future.
