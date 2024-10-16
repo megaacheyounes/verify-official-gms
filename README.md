@@ -8,6 +8,22 @@ However, **MicroG** does not fully replicate all Google services, and some servi
 
 To ensure that users are running the official, unmodified Google Play Services and prevent issues with unsupported services, we can check the cryptographic signature of the installed Google Play Services APK. This ensures that only the version signed by Google is allowed.
 
+## Contents
+
+- [Verifying Official Google Play Services on Android Devices](#verifying-official-google-play-services-on-android-devices)
+  - [Problem Overview](#problem-overview)
+  - [Contents](#contents)
+  - [What is MicroG?](#what-is-microg)
+    - [Supported Services in MicroG:](#supported-services-in-microg)
+    - [Unsupported or Incomplete Services in MicroG:](#unsupported-or-incomplete-services-in-microg)
+  - [Solution: Verifying Official Google Play Services](#solution-verifying-official-google-play-services)
+    - [How to Implement](#how-to-implement)
+      - [Kotlin Example](#kotlin-example)
+      - [Java Example](#java-example)
+    - [HMS SDK support](#hms-sdk-support)
+  - [Disclaimer](#disclaimer)
+
+
 ## What is MicroG?
 
 **MicroG** is an open-source implementation that aims to provide similar functionality to Google Play Services using free and open-source software (FOSS). It’s used mainly on devices where official Google Play Services are not available, such as on Huawei devices without access to the Google ecosystem.
@@ -32,7 +48,7 @@ To ensure that users are running the official, unmodified Google Play Services a
 
 Learn more about MicroG Implementation Status here: [MicroG implementation status](https://github.com/microg/GmsCore/wiki/Implementation-Status)
 
-### Due to these limitations, apps that rely on unsupported services may **crash** or behave unpredictably when running with MicroG or other unofficial replacements. 
+** Due to these limitations, apps that rely on unsupported services may **crash** or behave unpredictably when running with MicroG or other unofficial replacements.**
 
 ## Solution: Verifying Official Google Play Services
 
