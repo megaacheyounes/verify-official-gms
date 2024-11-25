@@ -218,7 +218,7 @@ public boolean isOfficialGooglePlayServicesInstalled(PackageManager packageManag
 
 ### HMS SDK support
 
-If the app is published to Huawei AppGallery, you must add the folllowing metadata following metadata to your `AndroidManifest.xml` file:
+If the app is published to Huawei AppGallery, you must add the folllowing metadata to your `AndroidManifest.xml` file:
 
 ```xml
 <manifest>
