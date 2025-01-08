@@ -21,6 +21,7 @@ To ensure that users are running the official, unmodified Google Play Services a
       - [Kotlin Example](#kotlin-example)
       - [Java Example](#java-example)
     - [HMS SDK support](#hms-sdk-support)
+    - [Handle exception gracefully](#handle-exception-gracefully)
   - [Disclaimer](#disclaimer)
 
 
@@ -232,6 +233,19 @@ If the app is published to Huawei AppGallery, you must add the folllowing metada
 
     </application>
 </manifest>
+```
+
+## Handle exception gracefully
+
+If the above does not work and could not be implmentated, you can simply wrap the GMS service initializatin in try-catch block to prevent crashing
+
+```kotlin
+try{
+  googlePayButton.initialize()
+} catch (e:Exception){
+  Log.w("MyApp","Google Wallet module not available or not official")
+  //TODO: hide GooglePay button or use alternative payment service/SDK
+}
 ```
 
 ## Disclaimer 
