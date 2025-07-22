@@ -94,4 +94,4 @@ try {
 
 This code is provided **without warranty**. SHA-1 values may change in the future. **Google may add or change signatures.** Please **test well** before using in production.
 
-For more details, read the full gist: [https://github.com/megaacheyounes/verify-official-gms](https://github.com/megaacheyounes/verify-official-gms)
+For more details, refer to: [https://github.com/megaacheyounes/verify-official-gms](https://github.com/megaacheyounes/verify-official-gms)
