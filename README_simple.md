@@ -76,7 +76,7 @@ If you're releasing your app to **Huawei AppGallery**, add this metadata to `And
 
 ### 🛡️ Optional: Fallback with Try-Catch
 
-Use try-catch to gracefully handle crashes in case above solution fail or can't be implemented:
+Use try-catch block to gracefully handle potential exceptions and prevent crashes:
 
 ```kotlin
 try {
