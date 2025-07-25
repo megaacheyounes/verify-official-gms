@@ -113,11 +113,10 @@ fun isOfficialGooglePlayServicesInstalled(packageManager: PackageManager): Boole
         }
         
         // Get the signature(s) of the package
-        val signatures = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            packageInfo.signingInfo.apkContentsSigners
-        } else {
-            packageInfo.signatures
-        }
+        val signatures = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P)
+            info.signingInfo?.apkContentsSigners ?: emptyArray()
+        else
+            info.signatures ?: emptyArray()
 
         // Iterate through the signatures and verify
         for (signature in signatures) {
